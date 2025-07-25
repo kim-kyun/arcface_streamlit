@@ -44,7 +44,7 @@ st.image(
     width=300
 )
 
-uploaded_file = st.file_uploader("얼굴 이미지 업로드", type=["vanessa.jpg", "sengtia.jpg", "doyen.jpg"])
+uploaded_file = st.file_uploader("얼굴 이미지 업로드", type=["jpg", "jpeg", "png"])
 
 if uploaded_file is not None:
     st.image(uploaded_file, caption="업로드한 이미지", use_column_width=True)
