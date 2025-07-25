@@ -37,8 +37,14 @@ def get_face_embedding(image_bytes):
 
 # 🚀 Streamlit UI
 st.title("🧑‍💻 얼굴 유사도 판별 (FAISS)")
+st.image(
+    ["doyen.jpg","sengtia.jpg","vanessa.jpg"],
+    caption=["전도연","신승태","vanessa"],
+    #use_column_width = True
+    width=300
+)
 
-uploaded_file = st.file_uploader("얼굴 이미지 업로드", type=["jpg", "jpeg", "png"])
+uploaded_file = st.file_uploader("얼굴 이미지 업로드", type=["vanessa.jpg", "sengtia.jpg", "doyen.jpg"])
 
 if uploaded_file is not None:
     st.image(uploaded_file, caption="업로드한 이미지", use_column_width=True)
