@@ -1,0 +1,8 @@
+streamlit
+insightface
+onnxruntime
+faiss-cpu
+scikit-learn
+numpy
+pandas
+opencv-python-headless
